@@ -4,22 +4,19 @@ import java.util.Scanner;
 
 public class Task3 {
 
-			public static void main(String[] args) {
-			// Составьте программу, котораЯ вычисляет произведение чисел от 1 до n.значение n вводится с клавиатуры.
-			
-			System.out.println("Введите первое число: ");
-			Scanner n = new Scanner (System.in);
-			double num = n.nextDouble ();
-			double sum = 0;
-					
-			for (int i=1; i<=num; i++) {
-				sum = i*num;
-					
-			}
+	public static void main(String[] args) {
+		// Составьте программу, которая вычисляет произведение чисел от 1 до n.значение
+		// n вводится с клавиатуры.
+
+		int result = 1;
+		System.out.println("Введите число n: ");
+		Scanner n = new Scanner(System.in);
+		int num = n.nextInt();
+		n.close();
+
+		for (int i = 1; i <= num; i++) {
+			result = result*i;
 		}
-
+		System.out.println("Произведение чисел от 1 до n = " + result);
 	}
-
-	}
-
 }

@@ -6,11 +6,10 @@ public class Task9 {
 		// 9. даны натуральные числа от 35 до 87. Найти и напечатать те из них, которые
 		// при делении на 7 дают остаток 1, 2 или 5.
 
-		int result = 0;
-		for (int i = 35; i < 87; i++) {
-			result = i % 7;
-			if (result == 1 || result == 2 || result == 5) {
-				System.out.println(i);
+		for (int i = 35; i <= 87; i++) {
+			boolean check = (i % 7 == 1 || i % 7 == 2 || i % 7 == 5);
+			if (check) {
+				System.out.print(i + " ");
 			}
 		}
 	}

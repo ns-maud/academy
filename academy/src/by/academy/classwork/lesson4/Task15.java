@@ -23,7 +23,6 @@ public class Task15 {
 		System.out.println(result);
 		
 		numA.close();
-		b.close();
+		numB.close();
 	}
-
 }
