@@ -17,6 +17,8 @@ public class Task1 {
 		System.out.println("Введите возраст покупателя:");
 		Scanner a = new Scanner (System.in);
 		age = a.nextInt ();	
+		a.close ();
+		p.close();
 		
 		System.out.println("Сумма покупки: " +  price + ".\nВозраст покупателя: " + age);
 		
@@ -44,7 +46,6 @@ public class Task1 {
 		price = price*(100-sale)/100;
 		System.out.println("Сумма со скидкой составила: " + price);
 		
-		a.close ();
-		p.close();
+		
 	}
 }
