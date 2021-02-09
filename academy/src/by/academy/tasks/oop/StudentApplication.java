@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class StudentApplication {
 
 	public static void main(String[] args) {
+		
 		ArrayList <Student> students = new ArrayList <Student> ();
 		ArrayList <Aspirant> aspirants = new ArrayList <Aspirant> ();
 		
