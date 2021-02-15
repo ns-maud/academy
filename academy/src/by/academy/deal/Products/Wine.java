@@ -1,8 +1,11 @@
-package by.academy.deal;
+package by.academy.deal.Products;
 
 public class Wine extends Product {
 	
 	protected String colour;
+	
+	public Wine () {
+	}
 	
 	public Wine (String name, double price, int quantity, String countryOfManufacture, String colour) {
 		super(name, price, quantity, countryOfManufacture);
@@ -10,9 +13,9 @@ public class Wine extends Product {
 	}
 	
 	@Override
-	protected double getDiscount () {
-		if (countryOfManufacture.equalsIgnoreCase("France")) {
-			return 0.95;
+	public double discount () {
+		if (colour.equals("Rose")) {
+			return 0.85;
 		}
 		return 1.0;
 	}

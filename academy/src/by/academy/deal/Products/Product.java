@@ -1,14 +1,14 @@
-package by.academy.deal;
+package by.academy.deal.Products;
 
-public class Product {
+public abstract class Product {
 
 	protected String name;
 	protected double price;
 	protected int quantity;
 	protected String countryOfManufacture;
-	protected double discount;
 
 	public Product() {
+		super();
 	}
 
 	public Product(String name, double price, int quantity, String countryOfManufacture) {
@@ -17,13 +17,12 @@ public class Product {
 		this.quantity = quantity;
 		this.countryOfManufacture = countryOfManufacture;
 	}
-	
-	protected double getDiscount() {
-		if (quantity >= 20) {
-			return 0.85;
-		} 
-		return 1.0;
+
+	public double calcFinalPrice() {
+		return quantity * price * discount();
 	}
+
+	public abstract double discount();
 
 	public String getName() {
 		return name;
@@ -55,9 +54,5 @@ public class Product {
 
 	public void setCountryOfManufacture(String countryOfManufacture) {
 		this.countryOfManufacture = countryOfManufacture;
-	}
-
-	public void setDiscount(double discount) {
-		this.discount = discount;
 	}
 }
