@@ -1,4 +1,4 @@
-package by.academy.classwork.lesson9;
+package by.academy.tasks.interfaceEnum.task2;
 
 public class Guitar implements Instrument{
 

@@ -1,0 +1,1 @@
+package by.academy.tasks.interfaceEnum.task2;
