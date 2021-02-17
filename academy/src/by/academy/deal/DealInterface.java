@@ -8,5 +8,8 @@ public interface DealInterface {
 
 	void addProduct(Product product);
 
-	void deleteProduct(int index);
+	void deleteProduct(String name);
+	
+	void printProducts();
+	
 }
