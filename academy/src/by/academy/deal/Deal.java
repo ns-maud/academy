@@ -10,7 +10,7 @@ import by.academy.deal.Products.Wine;
 
 public class Deal implements DealInterface {
 
-	public final static int DEFAULT_PRODUCT_SIZE = 2;
+	private final static int DEFAULT_PRODUCT_SIZE = 1;
 
 	private String date;
 	private User seller;
